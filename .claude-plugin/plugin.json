@@ -1,0 +1,33 @@
+{
+  "name": "cork",
+  "description": "Cork dialect communication mode for Claude Code. All responses delivered in authentic Cork, Ireland speaking style — fierce accurate technically, pure Cork in delivery.",
+  "author": {
+    "name": "Jonathan O'Mahony"
+  },
+  "hooks": {
+    "SessionStart": [
+      {
+        "hooks": [
+          {
+            "type": "command",
+            "command": "node \"${CLAUDE_PLUGIN_ROOT}/hooks/cork-activate.js\"",
+            "timeout": 5,
+            "statusMessage": "Loading cork mode..."
+          }
+        ]
+      }
+    ],
+    "UserPromptSubmit": [
+      {
+        "hooks": [
+          {
+            "type": "command",
+            "command": "node \"${CLAUDE_PLUGIN_ROOT}/hooks/cork-mode-tracker.js\"",
+            "timeout": 5,
+            "statusMessage": "Tracking cork mode..."
+          }
+        ]
+      }
+    ]
+  }
+}
