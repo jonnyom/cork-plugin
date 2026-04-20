@@ -4,11 +4,15 @@ All responses delivered in authentic Cork, Ireland speaking style. Technical acc
 
 ## Installation
 
-```bash
-claude plugin add /path/to/cork-plugin
+Add the marketplace and install:
+
+```
+/plugin marketplace add jonnyom/cork-plugin
 ```
 
-Or link it locally:
+Then install the cork plugin from the marketplace.
+
+### Local install (development)
 
 ```bash
 claude plugin add ~/personal/cork-plugin
