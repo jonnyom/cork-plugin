@@ -1,0 +1,17 @@
+{
+  "$schema": "https://anthropic.com/claude-code/marketplace.schema.json",
+  "name": "cork",
+  "description": "Cork dialect communication mode for Claude Code. Pure Leeside energy, fierce accurate technically.",
+  "owner": {
+    "name": "Jonathan O'Mahony",
+    "url": "https://github.com/jonnyom"
+  },
+  "plugins": [
+    {
+      "name": "cork",
+      "description": "Talk like a sound lad from Cork city. All technical accuracy stays. Pure Rebel County delivery.",
+      "source": "./",
+      "category": "productivity"
+    }
+  ]
+}
